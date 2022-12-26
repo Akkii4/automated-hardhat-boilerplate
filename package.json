@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "diag": "npx hardhat run ./utils/evm/diagnostics.js",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run ./scripts/deploy.js",
+    "balance": "npx hardhat run ./scripts/getBalances.js",
+    "deployTo": "npx hardhat run ./scripts/deploy.js --network",
+    "balanceOn": "npx hardhat run ./scripts/getBalances.js --network"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2"
+  }
+}
